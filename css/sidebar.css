@@ -1,0 +1,181 @@
+#id-button-alert {
+    color: white;
+    font-size: 1.5em;
+}
+
+#sidebar {
+    position: fixed;
+    width: 5em;
+    background-color: #272E3d;
+    min-height: 100%;
+    z-index: 3;
+    left: -120px;
+}
+
+#sidebar .sidebar-List div{
+    width: 100%;
+    padding: 20px 0px;
+    padding-bottom: 0px;
+    cursor: pointer;
+    font-size: 2.5em;
+    color: white;
+    text-align:center;
+}
+
+#sidebar-close-button {
+    position: absolute;
+    bottom: 30px;
+    width: 5em;
+    text-align: center;
+    cursor: pointer;
+    left: 190px;
+}
+
+#nav-content {
+    width: 15em;
+    position: fixed;
+    min-height: 100%;
+    left: -40px;
+    background: #e1e1e1;
+    z-index: 0;
+    opacity: 0;
+}
+
+#nav-content .first-skin{
+    margin-top: 50px;
+}
+
+#nav-content .nav-skin{
+    background-image: url(../img/skin-wood.jpg);
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+@keyframes skin-active {
+    from {
+        background-position: top;
+    } to {
+        background-position: bottom;
+    }
+}
+
+#nav-content .nav-skin:hover{
+    animation-name: skin-active;
+    animation-duration: 50s;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+}
+
+#nav-content #skin-wood{
+    background-image: url(../img/skin-wood.jpg);
+    background-position: center;
+}
+
+#nav-content #skin-star{
+    background-image: url(../img/skin-star.jpg);
+    background-position: -333px -46px;
+}
+
+#nav-con-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+
+@keyframes smf {
+    from {
+    } to {
+        transform:translateX(-120px);
+    }
+}
+
+.siderbar-move-left {
+    animation-name: smf;
+    animation-duration: 1s;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes cmr {
+    from {
+    } to {
+        transform:translateX(190px) rotate(450deg) scale(1);
+    }
+}
+
+.closeButton-move-right {
+    animation-name: cmr;
+    animation-duration: 1s;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes smr {
+    from {
+    } to {
+        transform:translateX(120px);
+    }
+}
+
+.siderbar-move-right {
+    animation-name: smr;
+    animation-duration: 1s;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes cml {
+    from {
+    } to {
+        transform:translateX(-190px) rotate(-405deg) scale(0.5);
+    }
+}
+
+.closeButton-move-left {
+    animation-name: cml;
+    animation-duration: 1s;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mml {
+    from {
+        opacity: 1;
+        z-index: 2;
+    } to {
+        transform:translateX(-120px);
+        opacity: 0;
+        z-index: 0;
+    }
+}
+
+.menubar-move-left {
+    animation-name: mml;
+    animation-duration: 1s;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mmr {
+    from {
+        opacity: 0;
+        z-index: 0;
+    } to {
+        transform:translateX(120px);
+        opacity: 1;
+        z-index: 2;
+    }
+}
+
+.menubar-move-right {
+    animation-name: mmr;
+    animation-duration: 1s;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+}

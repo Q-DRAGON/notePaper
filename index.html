@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>便签 Demo</title>
+        <link rel='stylesheet' href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+        <link rel='stylesheet' href="https://at.alicdn.com/t/font_574270_9s1bysk2srqhyqfr.css">
+        <link rel='stylesheet' href="css/notePaper.css">
+        <link rel='stylesheet' href="css/sidebar.css">
+    <body>
+        <div id='sidebar' class=''>
+            <div class='sidebar-List'>
+                <div class='sidebar-add sidebar-item iconfont icon-tianjia1'></div>
+                <div class='sidebar-skin sidebar-item iconfont icon-fl-pifu'></div>
+            </div>
+            <div id='sidebar-close-button' class='' data-state='closed'>
+                <i id='id-button-alert' class='iconfont icon-tianjia2'></i>
+            </div>
+        </div>
+        <div id='nav-content' class='' data-state='closed'>
+            <i id='nav-con-close' class='iconfont icon-youjiantou'></i>
+            <div data-id='skin-star' id='skin-star' class='nav-skin first-skin'>璀璨星空</div>
+            <div data-id='skin-wood' id='skin-wood' class='nav-skin'>雅致木纹</div>
+        </div>
+        <div class='alert-mask alert-hide'>
+            <div class='alert-note vertical-center'>
+                <textarea id='id-textarea-todo' placeholder="请输入你的内容"></textarea>
+                <span class='word-count-container'>还能输入 <span class='word-count'>140</span> 个字</span>
+            </div>
+            <i class='note-add vertical-center iconfont icon-wancheng'></i>
+        </div>
+        <div id='id-div-container'></div>
+    </body>
+    <script src='js/main.js'></script>
+    <script src='js/sidebar.js'></script>
+</html>
